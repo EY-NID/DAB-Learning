@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    pipeline_demopipeline:
+      name: demopipeline
+      libraries:
+        - glob:
+            include: ../../src/dabproject/pipelines/transformations/**
+      schema: default
+      photon: true
+      catalog: ${var.catalog_name}
+      serverless: true
+      root_path: /Workspace/Users/nidhi.gupta14@ctpsandbox.com/demopipeline
+
+
